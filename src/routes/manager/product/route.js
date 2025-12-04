@@ -46,4 +46,11 @@ router.get(
       get_product_details
 );
 
+// Delete Product
+router.get(
+      ROUTES.DELETE_PRODUCT,
+      [jwtMiddleware, validator.get(product_details_schema)],
+      delete_product
+);
+
 module.exports = { productRouter: router };
