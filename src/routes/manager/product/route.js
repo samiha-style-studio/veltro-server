@@ -8,6 +8,7 @@ const get_product_list_for_dropdown = require("./controller/get-product-list-for
 const create_product = require("./controller/create-product");
 const update_product_details = require("./controller/update-product-details");
 const get_product_details = require("./controller/get-product-details");
+const delete_product = require("./controller/delete-product");
 
 const router = Router();
 
